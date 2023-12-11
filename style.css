@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #202124;
+  color: #d6d6d6;
+  font-family: "arial", sans-serif;
+
+}
+
+.navbar ul{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+
+.navbar ul li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.profile-img{
+  height: 35px;
+  width: 35px;
+  border-radius: 30px;
+  padding: 2.5px;
+  border: 3px solid black;
+  border-right-color: #3074f1;  
+  border-left-color: #f6ad02;
+  border-top-color: #dc2d1b;
+  border-bottom-color: #249a41;
+}
+
+.google{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+  height: 92px;
+  overflow-clip-margin: content-box;
+  overflow: clip
+}
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar .btn{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 20px;
+  border: .5px solid #d6d6d6;
+  border-radius: 30px;
+  padding: 1em;
+  width: 500px;
+  align-items: center;
+
+
+  & input {
+    border: none;
+    width: -webkit-fill-available;
+  }
+}
+
+.searchbar .btn input:focus-visible{
+  outline: none;
+}
+.search-btn{
+  /* margin-right: 88%; */
+}
+.btns{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.btns div{
+  padding: 8px;
+  background-color: #303134;
+  border-radius: 2px;
+}
+
+.lng{
+  /* margin-left: 35%; */
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 25px;
+  text-align: left;
+  font-size: 12px;
+  & a{
+  color: #3074f1;
+  text-decoration: none;
+  }
+}
+
+.footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+
+   & .f1{
+    display: flex;
+    justify-content: left;
+    border-bottom: 0.5px solid #d6d6d6;
+    padding: 10px;
+    background-color:#171717;
+   }
+
+   & .f2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:#171717;
+
+    & .g1 ul{
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      justify-content: left;
+    }
+
+    & .g2 ul{
+      list-style: none;
+      display: flex;
+      justify-content: right;
+      gap: 10px;
+    }
+   }
+
+}
